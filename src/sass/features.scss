@@ -1,0 +1,287 @@
+.features {
+	padding-top: 35rem;
+	position: relative;
+	background: #fff;
+	z-index: 3;
+	clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
+	
+	@media only screen and (max-width:$laptop-land) {
+		padding-top: 10rem;
+		clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
+	}
+
+	// &::before {
+	// 	content: '';
+	// 	position: absolute;
+	// 	top: -12rem;
+	// 	left: 30%;
+	// 	width: 50%;
+	// 	height: 15rem;
+	// 	background: #fff;
+	// 	transform: rotate(-7.5deg);
+	// 	-webkit-transform: rotate(-7.5deg);
+	// 	-moz-transform: rotate(-7.5deg);
+	// 	-ms-transform: rotate(-7.5deg);
+	// 	-o-transform: rotate(-7.5deg);
+	// }
+
+	.video__box {
+		border: 2px solid #e5e5e5;
+		border-radius: 2rem;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+		margin-bottom: 4rem;
+		margin-left: 4rem;
+
+		@media only screen and (max-width: $tab-land) {
+			margin-left: 0;
+		}
+	}
+
+	&__content {
+		margin-right: 4rem;
+		margin-bottom: 4rem;
+		@media only screen and (max-width: $tab-land) {
+			margin-right: 0;
+		}
+	}
+
+	.app-store {
+		margin-top: 25rem;
+		@media only screen and (max-width: $laptop-land) {
+			margin-top: 10rem;
+		}
+		@media only screen and (max-width: $tab-land) {
+			.floating__cards {
+				text-align: center;
+				margin-top: 22rem;
+				margin-bottom: 20rem;
+			}
+		}
+		@media only screen and (max-width: 500px) {
+			.floating__cards {
+				margin-top: 5rem !important;
+				margin-bottom: 5rem !important;
+			}
+		}
+		@media only screen and (max-width: $mbl-port) {
+			.floating__cards {
+				margin-top: 15rem !important;
+				margin-bottom: 5rem !important;
+			}
+		}
+		@media only screen and (max-width: $mbl-small) {
+			.floating__cards {
+				margin-top: 15rem !important;
+				margin-bottom: 15rem !important;
+			}
+		}
+
+		.social__card {
+			max-width: 30rem;
+			filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.2));
+
+			&-fb {
+				transform: translateX(30%);
+			}
+			&-insta {
+				transform: translateY(-50%) translateX(0);
+				-webkit-transform: translateY(-50%) translateX(0);
+				-moz-transform: translateY(-50%) translateX(0);
+				-ms-transform: translateY(-50%) translateX(0);
+				-o-transform: translateY(-50%) translateX(0);
+			}
+
+			@media only screen and (max-width: $mbl-port) {
+				max-width: 25rem;
+				&-insta {
+					transform: translateX(-30%) translateY(-50%);
+					-webkit-transform: translateX(-30%) translateY(-50%);
+					-moz-transform: translateX(-30%) translateY(-50%);
+					-ms-transform: translateX(-30%) translateY(-50%);
+					-o-transform: translateX(-30%) translateY(-50%);
+				}
+				&-fb {
+					transform: translateX(40%);
+					-webkit-transform: translateX(40%);
+					-moz-transform: translateX(40%);
+					-ms-transform: translateX(40%);
+					-o-transform: translateX(40%);
+				}
+			}
+
+			@media only screen and (max-width: $mbl-small) {
+				max-width: 20rem;
+			}
+		}
+	}
+
+	.no-tabs {
+		margin: 0 auto;
+		margin-top: -10rem;
+		max-width: 82rem;
+		position: relative;
+
+		// .laptop-1 {
+		// 	position: absolute;
+		// 	top: 0;
+		// 	right: 0;
+		// 	max-width: 50rem;
+		// 	transform: translateY(50%) translateX(100%);
+		// 	-webkit-transform: translateY(50%) translateX(100%);
+		// 	-moz-transform: translateY(50%) translateX(100%);
+		// 	-ms-transform: translateY(50%) translateX(100%);
+		// 	-o-transform: translateY(50%) translateX(100%);
+		// }
+		@media only screen and (max-width: $tab-land) {
+			margin-top: 5rem;
+		}
+		@media only screen and (max-width: $mbl-land) {
+			margin-top: 5rem;
+		}
+		@media only screen and (max-width: $mbl-small) {
+			margin-top: -10rem;
+		}
+	}
+
+	.multi-task {
+		// margin-top: 60rem;
+
+		.laptop-2 {
+			transform-origin: right;
+			transform: scale(2.5) translateY(10%);
+			@media only screen and (max-width: $tab-land) {
+				transform: scale(1) translateY(0);
+				-webkit-transform: scale(1) translateY(0);
+				-moz-transform: scale(1) translateY(0);
+				-ms-transform: scale(1) translateY(0);
+				-o-transform: scale(1) translateY(0);
+			}
+		}
+	}
+
+	.ad-block {
+		margin-top: 25rem;
+		@media only screen and (max-width: $tab-land) {
+			margin-top: 5rem;
+
+			h2.heading {
+				margin-top: 5rem;
+			}
+		}
+
+		.laptop-3 {
+			transform-origin: left;
+			transform: scale(1.9);
+			@media only screen and (max-width: $tab-land) {
+				width: 100%;
+				max-width: 80rem;
+				transform: scale(1);
+				-webkit-transform: scale(1);
+				-moz-transform: scale(1);
+				-ms-transform: scale(1);
+				-o-transform: scale(1);
+			}
+		}
+	}
+
+	.data-security {
+		margin-top: 25rem;
+		@media only screen and (max-width: $tab-land) {
+			margin-top: 5rem;
+		}
+
+		.data__card {
+			width: 100%;
+			max-width: 20rem;
+			filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.2));
+
+			&-check {
+				transform: translateX(90%);
+				z-index: 1;
+				position: relative;
+			}
+			&-payment {
+				transform: translate(0, -50%);
+			}
+
+			@media only screen and (max-width: $tab-port) {
+				&-check {
+					margin-top: 20rem;
+					z-index: 1;
+					position: relative;
+					transform: translateX(90%) translateY(-100%);
+					-webkit-transform: translateX(90%) translateY(-100%);
+					-moz-transform: translateX(90%) translateY(-100%);
+					-ms-transform: translateX(90%) translateY(-100%);
+					-o-transform: translateX(90%) translateY(-100%);
+				}
+				&-payment {
+					transform: translateX(-100%);
+					-webkit-transform: translateX(-100%);
+					-moz-transform: translateX(-100%);
+					-ms-transform: translateX(-100%);
+					-o-transform: translateX(-100%);
+				}
+			}
+		}
+	}
+
+	.features__inner {
+		padding-top: 50rem;
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: $color-bg-light;
+			z-index: -1;
+			clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+		}
+		@media only screen and (max-width: $tab-land) {
+			padding-top: 30rem;
+			&::after {
+				clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
+			}
+		}
+		@media only screen and (max-width: $tab-port) {
+			padding-bottom: 20rem;
+			padding-top: 20rem;
+			&::after {
+				clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+			}
+		}
+		@media only screen and (max-width: $mbl-small) {
+			&::after {
+				clip-path: polygon(0 2%, 100% 0, 100% 100%, 0% 100%);
+			}
+		}
+
+		.laptop-1 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			max-width: 50rem;
+			transform: translateY(-10%);
+			-webkit-transform: translateY(-10%);
+			-moz-transform: translateY(-10%);
+			-ms-transform: translateY(-10%);
+			-o-transform: translateY(-10%);
+		}
+	}
+
+	.ball {
+		position: absolute;
+		max-width: 10rem;
+		z-index: 4;
+		filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.1));
+	}
+	.ball-1 {
+		top: -12rem;
+		left: 4rem;
+		transform: translateY(50%);
+	}
+}

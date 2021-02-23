@@ -1,0 +1,48 @@
+.header {
+	margin-top: 8rem;
+	padding: 8rem 0;
+	background: linear-gradient(to right, $color-bg-light, #7a9bdb);
+	min-height: 90vh;
+	background-size: cover;
+	background-position: center right;
+	clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+
+	@media only screen and (max-width: $mbl-land) {
+		clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+	}
+
+	@media only screen and (max-width: $tab-land) {
+		height: auto;
+		min-height: auto;
+		text-align: center;
+		padding-bottom: 25rem;
+	}
+
+	p.p__text-header {
+		font-size: 2.4rem;
+		font-weight: 300;
+		@media only screen and (max-width: $mbl-port) {
+			font-size: 1.8rem;
+		}
+	}
+
+	.header-img {
+		width: 100%;
+		max-width: 50rem;
+		margin-top: 5rem;
+		transform-origin: top;
+		transform: scale(1.7) translateX(-25%);
+		-webkit-transform: scale(1.7) translateX(-25%);
+		-moz-transform: scale(1.7) translateX(-25%);
+		-ms-transform: scale(1.7) translateX(-25%);
+		-o-transform: scale(1.7) translateX(-25%);
+
+		@media only screen and (max-width: $tab-land){
+			transform: scale(1) translateX(0);
+			-webkit-transform: scale(1) translateX(0%);
+			-moz-transform: scale(1) translateX(0%);
+			-ms-transform: scale(1) translateX(0%);
+			-o-transform: scale(1) translateX(0%);
+}
+	}
+}

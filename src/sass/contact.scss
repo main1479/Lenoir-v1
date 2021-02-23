@@ -1,0 +1,36 @@
+.contact {
+	padding: 10rem 0;
+
+	.form {
+		max-width: 35rem;
+		margin: 0 auto;
+
+		textarea,
+		input {
+			width: 100%;
+			display: block;
+			margin-bottom: 2rem;
+			border: 0;
+			border-bottom: 1px solid $color-dark;
+			padding: 5px;
+			font-size: 18px;
+			font-family: inherit;
+			padding-top: 1rem;
+		}
+		textarea {
+         margin-top: 5rem;
+			border: 1px solid $color-dark;
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			-ms-border-radius: 5px;
+			-o-border-radius: 5px;
+			min-height: 15rem;
+		}
+
+      &-btn{
+			font-size: 2.4rem;
+         padding: .5rem 3rem !important;
+      }
+	}
+}

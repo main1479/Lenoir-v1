@@ -1,0 +1,217 @@
+nav.nav {
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	padding: 1.5rem 0;
+	z-index: 9;
+	background: #fff;
+	box-shadow: 0 5px 20px rgba($color-primary, 0.1);
+
+	& .nav-flex {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.logo {
+		max-width: 19rem;
+	}
+
+	.nav__menu {
+		display: flex;
+		align-items: center;
+
+		&-item {
+			&:not(:last-child) {
+				margin-right: 5rem;
+			}
+		}
+
+		&-link {
+			&:link,
+			&:visited {
+				font-size: 2rem;
+				color: $color-dark;
+				transition: all 0.3s;
+
+				&:hover {
+					color: $color-primary;
+				}
+			}
+		}
+
+		&-btn {
+			font-size: 2rem;
+		}
+
+		@media only screen and (max-width: $tab-port) {
+			display: none;
+		}
+	}
+
+	.mobile__nav {
+		display: none;
+		@media only screen and (max-width: $tab-port) {
+			display: block;
+		}
+		.cursor {
+			width: 5rem;
+			height: 5rem;
+			// background: #000;
+			position: relative;
+			cursor: pointer;
+			z-index: 25;
+		}
+
+		.nav__bg {
+			position: absolute;
+			top: 2rem;
+			right: 2rem;
+			width: 4rem;
+			height: 6rem;
+			background: $color-primary;
+			border-radius: 50%;
+			transform: scale(0);
+			z-index: 5;
+			transition: all 0.5s;
+			transition-delay: 0.5s;
+			z-index: 10;
+			@media only screen and (max-width: $mbl-land) {
+				height: 4rem;
+			}
+		}
+		.nav__button {
+			position: absolute;
+			top: 0;
+			left: 0;
+			margin-top: 2rem;
+			display: block;
+			z-index: 25;
+			&,
+			&::before,
+			&::after {
+				content: '';
+				width: 4.5rem;
+				height: 2.5px;
+				background: $color-secondary;
+				transition: all 0.5s;
+				display: block;
+				border-radius: 30px;
+				-webkit-border-radius: 30px;
+				-moz-border-radius: 30px;
+				-ms-border-radius: 30px;
+				-o-border-radius: 30px;
+			}
+			&:before {
+				position: absolute;
+				left: 0;
+				top: -1.2rem;
+			}
+			&::after {
+				position: absolute;
+				left: 0;
+				top: 1.2rem;
+			}
+		}
+		.mobile__menu {
+			position: fixed;
+			top: 0;
+			right: 0;
+			width: 0;
+			height: 100vh;
+			// background: #000;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			z-index: 22;
+			opacity: 0;
+			visibility: hidden;
+			transition: all 0.5s;
+			overflow: hidden;
+			transition-delay: 0s;
+
+			&-link {
+				display: inline-block;
+				text-transform: capitalize;
+				font-size: 3rem;
+				color: #fff;
+				transition: all 0.4s;
+				margin-bottom: 1.5rem;
+				background: linear-gradient(
+					90deg,
+					transparent 0%,
+					transparent 50%,
+					$color-dark 50%
+				);
+				background-size: 201%;
+				padding: 0.5rem 3rem;
+
+				&:hover {
+					background-position: -100%;
+					transform: translateX(1rem);
+				}
+			}
+
+			li .btn {
+				&:link,
+				&:visited,
+				& {
+					font-size: 2.8rem;
+					color: $color-dark;
+					transition: all 0.3s;
+					padding: 1rem 0.8rem;
+					border: 2px solid currentColor;
+					text-transform: capitalize;
+					font-weight: 700;
+					border-radius: 5px;
+					&:hover {
+						color: $color-dark;
+					}
+				}
+			}
+		}
+
+		&.active {
+			.nav__bg {
+				transition-delay: 0s;
+				transform: scale(35);
+				-webkit-transform: scale(35);
+				-moz-transform: scale(35);
+				-ms-transform: scale(35);
+				-o-transform: scale(35);
+				@media only screen and (max-width: $mbl-land) {
+					transform: scale(50);
+					-webkit-transform: scale(50);
+					-moz-transform: scale(50);
+					-ms-transform: scale(50);
+					-o-transform: scale(50);
+				}
+			}
+
+			.mobile__menu {
+				opacity: 1;
+				visibility: visible;
+				width: 75%;
+				transition-delay: 0.5s;
+				@media only screen and (max-width: $mbl-land) {
+					width: 100%;
+					transition-delay: 0.5s;
+				}
+			}
+
+			.nav__button {
+				background: transparent;
+				&:before {
+					transform: rotate(135deg);
+					top: 0;
+				}
+				&::after {
+					transform: rotate(-135deg);
+					top: 0;
+				}
+			}
+		}
+	}
+}

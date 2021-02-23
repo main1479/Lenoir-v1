@@ -1,0 +1,33 @@
+h1.heading {
+	font-size: 6.6rem;
+	font-weight: 700;
+
+	@media only screen and (max-width: $tab-port) {
+		text-align: center;
+		font-size: 5rem;
+	}
+	@media only screen and (max-width: $mbl-port) {
+		font-size: 4rem;
+	}
+}
+
+h2.heading {
+	font-size: 3.6rem;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+h3.heading {
+	font-size: 3rem;
+	font-weight: 400;
+}
+
+p.p__text {
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+}
+
+.bold{
+   font-weight: 700 !important;
+}

@@ -1,0 +1,12 @@
+.vienna {
+	padding: 10rem 0;
+	background: $color-primary-dark;
+
+	@media only screen and (max-width: $tab-port) {
+      position: relative;
+      z-index: 4;
+      margin-top: -10rem;
+      padding: 15rem 0;
+      clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+	}
+}

@@ -1,0 +1,47 @@
+.footer {
+	padding: 3rem 0;
+	background: $color-secondary;
+
+	&__logo {
+		max-width: 20rem;
+		margin-bottom: 4rem;
+	}
+	.link__item {
+		a {
+			&:link,
+			&:visited {
+				transition: all 0.3s;
+				-webkit-transition: all 0.3s;
+				-moz-transition: all 0.3s;
+				-ms-transition: all 0.3s;
+				-o-transition: all 0.3s;
+
+				&:hover {
+					color: $color-primary;
+				}
+			}
+		}
+	}
+
+	.social__links {
+		display: flex;
+
+		a:link,
+		a:visited {
+			display: inline-block;
+			font-size: 3rem;
+			&:not(:last-child) {
+				margin-right: 3rem;
+			}
+			transition: all 0.3s;
+			-webkit-transition: all 0.3s;
+			-moz-transition: all 0.3s;
+			-ms-transition: all 0.3s;
+			-o-transition: all 0.3s;
+
+         &:hover{
+            color: $color-primary;
+         }
+		}
+	}
+}

@@ -1,0 +1,89 @@
+*{  
+    &, 
+    &::after,
+    &::before{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: 0;
+        text-decoration: none;
+        list-style: none; 
+    }
+
+    & a:hover{
+        text-decoration:none;
+    }
+}
+
+html{ 
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-size: 62.2%;
+
+    @media only screen and (max-width:$laptop-land){
+        font-size: 55%;
+    }
+    @media only screen and (max-width:$tab-land){
+        font-size: 50%;
+    }
+
+}
+
+body{
+    font-family: $font-primary;
+    line-height: 1.6;
+    overflow-x: hidden;
+    font-size: 1.8rem;
+    font-weight: 400;
+
+}
+.container{
+    max-width: 1180px;
+}
+ 
+::selection{
+    background: $color-dark;
+    color: #fff;
+} 
+
+img{
+    max-width: 100%;
+}
+// ===================================
+// reuseable classes
+// ===================================
+
+.btn{
+    &:link,
+    &:visited,
+    &{
+        font-size: 2.8rem;
+        color: $color-primary;
+        transition: all .3s;
+        padding: 1rem .8rem;
+        border: 2px solid currentColor;
+        text-transform: capitalize;
+        font-weight: 700;
+        border-radius: 5px;
+        &:hover{
+            color: $color-dark;
+        }
+    }
+}
+
+.mobile-hide{
+    @media only screen and (max-width: $tab-land){
+        display: none;
+    }
+}
+.tablet-hide{
+    @media only screen and (max-width: $tab-land){
+        display: none;
+    }
+}
+.mobile-show{
+    display: none;
+    @media only screen and (max-width: $tab-port){
+        display: block;
+    }
+}
