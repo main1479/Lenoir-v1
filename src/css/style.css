@@ -226,8 +226,8 @@ img {
 .btn:link, .btn:visited, .btn {
   font-size: 2.8rem;
   color: #f74848;
-  transition: all .3s;
-  padding: 1rem .8rem;
+  transition: all 0.3s;
+  padding: 1rem 0.8rem;
   border: 2px solid currentColor;
   text-transform: capitalize;
   font-weight: 700;

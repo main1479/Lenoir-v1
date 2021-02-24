@@ -71,6 +71,35 @@ if (window.screen.availWidth >= 770) {
 			scrub: 1,
 		},
 	});
+	gsap.set('.ball-1', { yPercent: -50 });
+	gsap.to('.ball-1', {
+		yPercent: -250,
+		ease: 'none',
+		scrollTrigger: {
+			trigger: '.ball-1',
+			scrub: 1,
+		},
+	});
+
+	gsap.set('.ball-2', { xPercent: -50 });
+	gsap.to('.ball-2', {
+		xPercent: -250,
+		ease: 'none',
+		scrollTrigger: {
+			trigger: '.ball-2',
+			scrub: 1,
+		},
+	});
+
+	gsap.set('.ball-3', { yPercent: -50 });
+	gsap.to('.ball-3', {
+		yPercent: -250,
+		ease: 'none',
+		scrollTrigger: {
+			trigger: '.ball-3',
+			scrub: 1,
+		},
+	});
 
 	ScrollTrigger.create({
 		trigger: '.header',
@@ -97,6 +126,7 @@ if (window.screen.availWidth >= 770) {
 	});
 }
 
+// =====================================
 // mobile nav ==========================
 
 const toggleBtn = document.querySelectorAll('.nav__toggle');
