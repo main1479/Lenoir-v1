@@ -33,10 +33,10 @@
 					</a>
 					<ul class="nav__menu">
 						<li class="nav__menu-item">
-							<a href="#about" class="nav__menu-link go-to-link">About</a>
+							<a href="#about" class="nav__menu-link about__link">About</a>
 						</li>
 						<li class="nav__menu-item">
-							<a href="#contact" class="nav__menu-link go-to-link">Contact</a>
+							<a href="#contact" class="nav__menu-link">Contact</a>
 						</li>
 						<li class="nav__menu-item">
 							<a href="#" class="btn nav__menu-btn">Download for free</a>
@@ -53,10 +53,14 @@
 
 						<ul class="mobile__menu">
 							<li>
-								<a class="nav__toggle go-to-link mobile__menu-link" href="#about">About</a>
+								<a
+									class="nav__toggle about__link mobile__menu-link"
+									href="#about"
+									>About</a
+								>
 							</li>
 							<li>
-								<a class="nav__toggle go-to-link mobile__menu-link" href="#contact"
+								<a class="nav__toggle mobile__menu-link" href="#contact"
 									>Contact Us</a
 								>
 							</li>
@@ -74,7 +78,8 @@
 		<!-- ==================================== -->
 		<!-- header area -->
 		<!-- ==================================== -->
-		<header class="header">
+		<header class="header" id="home">
+			<div id="about-clone"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-8">
@@ -86,12 +91,17 @@
 						</p>
 						<a href="#" class="btn">Download for free</a>
 					</div>
+					
 					<div class="col-lg-4">
-						<img src="img/header-img.png" alt="Lenoir" class="img-fluid header-img">
+						<img
+							src="img/header-img.png"
+							alt="Lenoir"
+							class="img-fluid header-img"
+						/>
 					</div>
 				</div>
 			</div>
-			<!-- <div id="about"></div> -->
+			<!-- <div id="about-clone"></div> -->
 		</header>
 
 		<!-- ======================================= -->
@@ -440,8 +450,8 @@
 		</footer>
 
 		<!-- gsap files -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+		<script src="js/gsap.min.js"></script>
+		<script src="js/ScrollTrigger.min.js"></script>
 
 		<!-- Main js file -->
 		<script src="js/main.js"></script>
