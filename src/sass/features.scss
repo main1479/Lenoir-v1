@@ -4,8 +4,8 @@
 	background: #fff;
 	z-index: 3;
 	clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
-	
-	@media only screen and (max-width:$laptop-land) {
+
+	@media only screen and (max-width: $laptop-land) {
 		padding-top: 10rem;
 		clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
 	}
@@ -216,12 +216,22 @@
 					-o-transform: translateX(90%) translateY(-100%);
 				}
 				&-payment {
-					transform: translateX(-100%);
-					-webkit-transform: translateX(-100%);
-					-moz-transform: translateX(-100%);
-					-ms-transform: translateX(-100%);
-					-o-transform: translateX(-100%);
+					transform: translateX(-0%) translateY(-100%);
+					-webkit-transform: translateX(-0%) translateY(-100%);
+					-moz-transform: translateX(-0%) translateY(-100%);
+					-ms-transform: translateX(-0%) translateY(-100%);
+					-o-transform: translateX(-0%) translateY(-100%);
 				}
+			}
+
+			@media only screen and (min-width: 0) and (max-width: $tab-port){
+				&-payment {
+					transform: translateX(-100%) translateY(0);
+					-webkit-transform: translateX(-100%) translateY(0);
+					-moz-transform: translateX(-100%) translateY(0);
+					-ms-transform: translateX(-100%) translateY(0);
+					-o-transform: translateX(-100%) translateY(0);
+}
 			}
 		}
 	}

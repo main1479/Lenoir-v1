@@ -1,4 +1,4 @@
-if(window.screen.availWidth >= 768){
+if (window.screen.availWidth >= 770) {
 	gsap.set('.laptop-1', { xPercent: 20, scale: 0.7 });
 	gsap.to('.laptop-1', {
 		xPercent: -20,

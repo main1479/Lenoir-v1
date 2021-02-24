@@ -438,7 +438,8 @@ nav.nav {
   margin-top: 8rem;
   padding: 8rem 0;
   background: linear-gradient(to right, #f1f2fd, #7a9bdb);
-  min-height: 90vh;
+  height: 100vh;
+  min-height: 90rem;
   background-size: cover;
   background-position: center right;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); }
@@ -699,11 +700,18 @@ nav.nav {
           -ms-transform: translateX(90%) translateY(-100%);
           -o-transform: translateX(90%) translateY(-100%); }
         .features .data-security .data__card-payment {
-          transform: translateX(-100%);
-          -webkit-transform: translateX(-100%);
-          -moz-transform: translateX(-100%);
-          -ms-transform: translateX(-100%);
-          -o-transform: translateX(-100%); } }
+          transform: translateX(0%) translateY(-100%);
+          -webkit-transform: translateX(0%) translateY(-100%);
+          -moz-transform: translateX(0%) translateY(-100%);
+          -ms-transform: translateX(0%) translateY(-100%);
+          -o-transform: translateX(0%) translateY(-100%); } }
+      @media only screen and (min-width: 0) and (max-width: 48em) {
+        .features .data-security .data__card-payment {
+          transform: translateX(-100%) translateY(0);
+          -webkit-transform: translateX(-100%) translateY(0);
+          -moz-transform: translateX(-100%) translateY(0);
+          -ms-transform: translateX(-100%) translateY(0);
+          -o-transform: translateX(-100%) translateY(0); } }
   .features .features__inner {
     padding-top: 50rem;
     position: relative; }
