@@ -126,8 +126,6 @@ if (window.screen.availWidth >= 770) {
 	});
 }
 
-
-
 // =====================================
 
 window.addEventListener('scroll', () => {
@@ -136,17 +134,15 @@ window.addEventListener('scroll', () => {
 	let winHeight = window.innerHeight;
 	let scrollPercent = scrollTop / (docHeight - winHeight);
 	let scrollPercentRounded = Math.round(scrollPercent * 100);
-	
+
 	const btns = document.querySelectorAll('.about__link');
-	btns.forEach(btn => {
-		if(scrollPercentRounded >= 23){
+	btns.forEach((btn) => {
+		if (scrollPercentRounded >= 23) {
 			btn.href = '#about-clone';
-		}else{
+		} else {
 			btn.href = '#about';
 		}
-		
-	})
-
+	});
 });
 
 // mobile nav ==========================
